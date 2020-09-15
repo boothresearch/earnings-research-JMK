@@ -1,0 +1,22 @@
+[1] 2020-09-15 20:51:15 UTC
+
+Call:
+lm(formula = log(earnings$earn) ~ log(earnings$height) * earnings$male)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.2543 -0.4361  0.1093  0.5740  2.8131 
+
+Coefficients:
+                                   Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                          5.3899     2.8747   1.875    0.061 .
+log(earnings$height)                 0.9900     0.6899   1.435    0.151  
+earnings$male                       -5.7476     4.4566  -1.290    0.197  
+log(earnings$height):earnings$male   1.4520     1.0575   1.373    0.170  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8676 on 1625 degrees of freedom
+Multiple R-squared:  0.08124,	Adjusted R-squared:  0.07954 
+F-statistic: 47.89 on 3 and 1625 DF,  p-value: < 2.2e-16
+
